@@ -281,9 +281,6 @@ li.line{
 }
 
 @media screen and (max-width: 370px){
-    .banner{
-        margin-left: -15px;
-    }
     .button{
         font-size: 12px;
         width: 78px;
