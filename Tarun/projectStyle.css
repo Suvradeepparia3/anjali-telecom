@@ -391,7 +391,7 @@ li.line{
 
 @media screen and (max-width: 370px){
     .banner{
-        margin-left: -15px;
+        margin-left: -6px;
     }
     .button{
         font-size: 12px;
