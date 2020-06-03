@@ -351,7 +351,7 @@ li.line{
 }
 @media screen and (max-width: 800px){
     .banner{
-        width: 330px;
+        width: 340px;
         height: 400px;
         margin-top: 65px;
         margin-left: auto;
