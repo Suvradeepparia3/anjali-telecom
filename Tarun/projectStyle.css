@@ -1,0 +1,548 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(32, 30, 30);
+}
+
+/* navbar */
+a.link{
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+.bold{
+    font-size: 30px;
+    color: white;
+    font-family: 'Montserrat';
+}
+.tail{
+    font-size: 15px;
+    color: tomato;
+}
+.text{
+    text-align: center;
+}
+
+/* home button  */
+.item{
+    margin-top: 180px;
+ }
+ .item2{
+    margin-top: 100px; 
+ }
+.button{
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    border-radius: 4%;
+    border: 2px solid rgb(65, 57, 57);
+    text-align: center;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    position: relative;
+}
+.move1{
+    animation: mymove 5s infinite;
+}
+.move2{
+    animation: mymove 3s infinite;
+}
+@keyframes mymove {
+    0%   {top: 0px; left:0px}
+    25%  {top: 0px; left:20px}
+    50%  {top: 20px; left:20px}
+    75%  {top: 20px; left:0px}
+    100% {top: 0px; left:0px}
+}
+.button:hover{
+    background-color: white;
+    color: #000;
+    border: none;
+    width: 210px;
+    height: 110px;
+    box-shadow: 5px 5px 40px 2px rgb(100, 94, 94);
+    transition-duration: 0.4s;
+    animation: none;
+}
+
+/* home slider  */
+.banner{
+    margin-top: 145px;
+    margin-left: 70px;
+    border-radius: 5px;
+    height: 400px;
+    width: 520px;
+    overflow: hidden;
+    transition-duration: 0.4s;
+}
+.auto-slider{
+    list-style: none;
+    display: flex;
+    transition-duration: 0.4s;
+    animation: animate 7s infinite;
+}
+.banner:hover{
+    box-shadow: 5px 5px 40px 2px rgb(126, 116, 116);
+    transition-duration: 0.4s;
+}
+.auto-slider:hover{
+    animation-play-state: paused;
+}
+@keyframes animate{
+    0%, 25%{
+        transform: translateX(-40px);
+    }
+    26%, 50%{
+        transform: translateX(-560px);
+    }
+    51%, 75%{
+        transform: translateX(-1080px);
+    }
+    76%, 100%{
+        transform: translateX(-1600px);
+    }
+}
+
+/* electronic appliances */ 
+.ElectronicAppliances{
+    left: 0;
+    margin-top: 150px;
+    height: 550px;
+}
+.electronic-heading, .technician-heading{
+    background-color: black;
+    color: rgb(80, 238, 101);
+    border-radius: 9px;
+    box-shadow: 2px 2px 10px 2px rgb(167, 164, 164);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 95px;
+    width: 100px;
+    height: 35px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+.eletronicItem{
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: 80px;
+}
+.tech-card{
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-header{
+    font-size: 20px;
+    font-family: 'Montserrat';
+    background-color: teal;
+}
+.list-group-flush{
+    background-color: wheat;
+}
+.list-group-item{
+    font-family: 'Montserrat'; 
+    font-size: 15px;
+    background-color: wheat;
+    height: 60px;
+}
+
+/* Financial */
+.FinancialService{
+    margin-top: 120px;
+}
+#finanImg{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box{
+    text-align: center;
+    border-radius: 9px;
+    border: solid 1px gray;
+    color: honeydew;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: mediumseagreen;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.round{
+    border-radius: 50%;
+    background-color: skyblue;
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    margin-top: 55px;
+    animation: myanimation 10s infinite;
+}
+@keyframes myanimation {
+    0% {background-color: red;}
+    25%{background-color:rgb(211, 211, 27);}
+    50%{background-color:green;}
+    75%{background-color:brown;}
+    100% {background-color: red;}
+  }
+.first{
+    margin-bottom: 25px;
+}
+.middle{
+    margin-top: -60px;
+}
+.last{
+    margin-top: -10px;
+}
+.fst{
+    margin-top: 130px;
+}
+.lst{
+    margin-top: -30px;
+}
+.middle-round{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.left-round{
+    margin-left: -35px;
+}
+.round-text{
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    margin-top: 66px;
+}
+#round-img{
+    width: 300px;
+    height: 300px;
+    margin-left: 10px;
+}
+
+/* tecnician book */
+.TechnicianBook{
+    margin-top: 30px;
+    height: 650px;
+}
+.description{
+    height: 110px;
+    font-size: 17px;
+}
+.color{
+    background-color: royalblue;
+}
+
+/* helpline */
+.Helpline{
+    background-color: grey;
+}
+#welcomeImg{
+    height: 150px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    border: solid 3px tomato;
+    animation: myanimation 10s infinite;
+}
+.forFounder{
+    width: 460px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.founderHeader{
+    background-color: rgb(125, 182, 231);
+    text-align: center;
+}
+.founderText{
+    font-family:'Montserrat' ;
+    text-align: center;
+    font-weight: 600;
+    font-size: xx-large;
+}
+.mobile-tech{
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mb-tech{
+    background-color: blueviolet;
+    height: 140px;
+    text-align: center;
+    line-height: 110px;
+    color: white;
+}
+#batchlogo,#batchlogo2{
+    margin-top: -40px;
+}
+/* about us */
+.aboutUs{
+    height: 100%;
+}
+.back-orange{
+    background-color: salmon;
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    height: 300px;
+    margin-top: 108px;
+    font-weight: 700;
+    line-height: 300px;
+}
+.back-green{
+    font-family: 'Montserrat';
+    height: 500px;
+    margin-top: 98px;
+    color: wheat;
+    overflow: hidden;
+}
+li.line{
+    margin-bottom: 60px;
+    font-size: 20px;
+}
+
+/* footer */
+.myinfo{
+    text-align: center;
+    background-color: honeydew;
+}
+/* Meadia Quries */
+
+/* nav */
+@media screen and (max-width: 580px){
+    .mobile-nav{
+        text-align: center;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bold{
+        font-size: 27px;
+    }
+    .tail{
+        font-size: 13px;
+    }
+    #logo{
+        display: none;
+    }
+}
+
+/* home */
+@media screen and (max-width: 1090px){
+    .banner{
+        width: 420px;
+        height: 350px;
+        margin-left: 75px;
+    }
+    .button{
+        width: 150px;
+        height: 75px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 991px){
+    .button{
+        font-size: 10px;
+        width: 125px;
+        height: 90px;
+    }
+    .button:hover{
+        width: 125px;
+        height: 90px;
+    }
+    .banner{
+        margin-top: 70px;
+        margin-left: 240px;
+    }
+    .item{
+        margin-top: 50px;
+     }
+     .item2{
+        margin-top: 50px; 
+        margin-bottom: 30px;
+     }
+}
+@media screen and (max-width: 800px){
+    .banner{
+        width: 340px;
+        height: 400px;
+        margin-top: 65px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @keyframes animate{
+        0%, 25%{
+            transform: translateX(-40px);
+        }
+        26%, 50%{
+            transform: translateX(-580px);
+        }
+        51%, 75%{
+            transform: translateX(-1070px);
+        }
+        76%, 100%{
+            transform: translateX(-1690px);
+        }
+    }
+    .button{
+        font-size: 13px;
+        width: 90px;
+        height: 120px;
+    }
+    .button:hover{
+        width: 90px;
+        height: 120px;
+    }
+    @keyframes mymove {
+        0%   {top: 0px; left:0px}
+        25%  {top: 0px; left:10px}
+        50%  {top: 10px; left:10px}
+        75%  {top: 10px; left:0px}
+        100% {top: 0px; left:0px}
+    }
+}
+
+@media screen and (max-width: 370px){
+    .banner{
+        margin-left: -6px;
+    }
+    .button{
+        font-size: 12px;
+        width: 78px;
+        height: 120px;
+        animation-play-state: paused;
+    }
+    .button:hover{
+        width: 78px;
+        height: 120px;
+    }
+    .item2{
+        margin-top: 75px;
+        margin-bottom: 20px;
+    }
+}
+
+/* sales item */
+@media screen and (max-width: 991px){
+    .card, .card-header, ul.list-group, ul.list-group-flush, li.list-group-item{
+        width: 200px;
+        color: #000;
+    }
+    a.btn-primary{
+        width: 200px;
+        font-size: 12px;
+    }
+    .ElectronicAppliances{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 830px) and (min-width: 762px){
+    .eletronicItem{
+        margin-left: 25px;
+    }
+}
+@media screen and (max-width: 760px){
+    .ElectronicAppliances{
+        height: 100%;
+    }
+    .card{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 400px){
+    .eletronicItem{
+        margin-left: 30px;
+    }
+    .electronic-heading{
+        font-size: 19px;
+    }
+}
+
+/* technician book */
+@media screen and (max-width: 1140px){
+    .description{
+        font-size: 14px;
+    }
+}
+/*finan */
+@media screen and (max-width: 967px){
+    #FinancialService{
+        margin-top: 40px;
+    }
+    #finanImg{
+        margin-top: 70px;
+        height: 150px;
+    }
+    .fst,.middle-round,.left-round,.lst,.mdl-fst{
+        margin-top: auto;
+    }
+    .middle{
+        margin-top: -25px;
+    }
+    .last{
+        margin-top: 0px;
+    }
+    .left-round{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box{
+        font-size: 20px;
+    }
+}
+/* Helpline */
+@media screen and (max-width: 967px){
+    .Helpline{
+        margin-top: 700px;
+    }
+    #welcomeImg{
+        width: 315px;
+        height: 80px;
+        margin-left: auto;
+    }
+    .founderText{
+        font-size:x-large ;
+    }
+    .body-text{
+        font-size:15px ;
+    }
+    #batchlogo{
+        height: 120px;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    #batchlogo2{
+        height: 140px;
+        width: 320px;
+        margin-left: -10px;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .mb-tech{
+        height: 80px;
+        font-size: 20px;
+        line-height: 19px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mobile-tech{
+        margin-top: 50px;
+    }
+}
+
+/* about us 
+@media screen and (max-width: 767px){
+    .aboutUs{
+        margin-top: 750px;
+    }
+}
+*/ 
